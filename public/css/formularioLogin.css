@@ -1,0 +1,85 @@
+:root {
+    --Amarillo: #eac926;
+    --Azul: #03264c;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+    --font-family: "Roboto", sans-serif;
+  }
+  
+  * {
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+  }
+
+
+  /*main*/ 
+
+  .main_login{
+    background-color: var(--GrisClaro);
+  }
+
+  /*form */
+  
+.main_login form{
+  height: 50vh;
+  padding-top: 60px;
+  max-width: 583px;
+  margin: auto;
+}
+
+.main_login .data__login{
+  display:flex;
+  flex-direction: column;
+  margin: 5px;
+  gap: 15px 0;
+}
+
+.data__login label{
+    text-align: center;
+    padding: 7px;
+}
+
+.data__login input{
+  border: 1px solid black;
+  padding: 14px;
+  margin: 2px 0;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+
+.buttom-check{
+  padding: 10px;
+  margin: 35px;
+  max-width: 583px;
+  display: flex;
+  background-color: var(--Celeste);
+  border-radius: 5px;
+}
+
+.buttom-check button{
+  padding: 4px 100px;
+  text-decoration: none;
+  background-color: var(--Celeste);
+   color: var(--GrisClaro); 
+}
+
+.conteiner__span{
+   max-width: 90%;
+   text-align: center;
+}
+
+.span a{
+text-decoration: none;
+}
+
+
+@media(min-width: 583px){
+  .buttom-check button{
+    padding: 4px 205px;
+ 
+  }
+}

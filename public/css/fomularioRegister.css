@@ -1,0 +1,157 @@
+/* variables */
+:root {
+    --Amarillo: #eac926;
+    --Azul: #03264c;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+    --font-family: "Roboto", sans-serif;
+  }
+  
+  * {
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+  }
+
+/* body */
+.register{
+  background-color: var(--GrisClaro);
+}
+
+.conteiner__register .user{
+  padding: 0 16px;
+  margin: 5px;
+}
+
+.conteiner__register .user label{
+ position: relative;
+ left: 64px;
+}
+
+.conteiner__register .datos_form{
+  display:flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.conteiner__register .datos_form label{
+  text-align: center;
+}
+
+.conteiner__register .datos_form input{
+  border-radius: 6px;
+}
+.conteiner__register{
+  padding: 50px 0;
+}
+.conteiner__register form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 583px;
+  margin: auto;
+}
+
+.conteiner__register form input{
+  border: 1px solid black;
+  padding: 10px;
+  margin: 2px 0;
+  letter-spacing: 1px;
+}
+
+.conteiner__register form input::placeholder {
+  color: lightslategray;
+  letter-spacing: 1px;
+}
+
+.conteiner__register form input:active,
+.conteiner__register form input:focus {
+  outline: none;
+}
+
+.conteiner__register .register__activity {
+  display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 28px;
+}
+
+.conteiner__register .register__activity div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+
+.conteiner__register .category-title{
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+.conteiner__register .categories-list {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.conteiner__register .categories-list li {
+margin: 10px;
+display: flex;
+flex-direction: row-reverse;
+justify-content: start;
+gap: 21px;
+align-items: center;
+} 
+
+
+.conteiner__register .buttom__check {
+  display: flex;
+  gap: 30px;
+  margin: 7px;
+}
+
+.conteiner__register .buttom__check button {
+  padding: 5px 20px;
+  width: 50%;
+}
+
+.conteiner__register .buttom_submit{
+  background-color: var(--Celeste);
+  color: var(--GrisClaro);
+  border-radius: 6px;
+  padding: 10px;
+}
+.conteiner__register .buttom_reset{
+  background-color: red;
+  color: var(--GrisClaro);
+  border-radius: 9px;
+  padding: 10px;
+}
+
+
+@media (min-width: 550px){
+  .conteiner__register .user{
+    padding: 0 110px;
+  }
+  
+}
+
+@media (min-width: 768px){
+  .user{
+    padding: 0 120px;
+    margin: 7px;
+  }
+
+  .user label{ 
+    left: 100px;
+   }
+
+   .conteiner__register .register__activity {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 0 130px;
+  }
+
+}

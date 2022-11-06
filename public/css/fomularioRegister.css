@@ -130,6 +130,20 @@ align-items: center;
   padding: 10px;
 }
 
+.conteiner__span{
+   text-align: center;
+   background-color: red;
+   border-radius: 20px;
+   padding: 14px;
+}
+.span{
+
+}
+
+.span a{
+  color: white;
+  text-decoration: none;
+}
 
 @media (min-width: 550px){
   .conteiner__register .user{

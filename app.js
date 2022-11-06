@@ -24,6 +24,8 @@ app.get('/detalleDeProducto', function (req, res){
 app.get('/vistaDeUsuario', function (req, res){
     res.sendFile(path.join(__dirname, "/views/vistaDeUsuario.html"))
 });
-
+app.get('/login', function (req, res){
+    res.sendFile(path.join(__dirname, "/views/login.html"))
+});
 /* Servidor */
 app.listen(puerto, () => console.log(`Servidor levantado en el puerto http://localhost:${puerto}`));

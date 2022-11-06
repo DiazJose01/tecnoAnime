@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root{
+    --primari-color: #131086;
+    --secondary-Color: #b621f3;
+    --roboto: "Roboto", sans-serif;
+}
+
+*{
+    
+    box-sizing: border-box;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    opacity: .7;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--roboto);
+    background: linear-gradient(45deg, var(--primari-color), var(--secondary-Color));
+    padding: 10px;
+}
+
+.login-contater{
+   
+    max-width: 420px;}
+
+.login-left{
+display: flex;
+flex-direction: column;
+justify-content: content;
+padding: 40px;
+background-color: white;
+border-radius: 12px;
+}
+
+.form-item{
+    padding: 7px;
+}
+
+input[type='text'],
+input[type='password']{
+border: 1px solid black;
+height: 53px;
+outline: none;
+width: 100%;
+font-size: 20px;
+border-radius: 50px;
+}
+
+.checkbox{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+
+.buttom-container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    background: linear-gradient(45deg, var(--primari-color, var(--secondary-Color)));
+    color: white;
+    background-color: var(--primari-color);
+    padding: 1.2rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 19px;
+    height: 60px;
+    cursor: pointer;
+    text-align: center;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.register{
+   padding: 10px;
+   text-align: center;
+}
+.register a {
+    text-decoration: none;
+    color: blue;
+}
+
+.login1{
+    display: none;
+}
+
+@media(max-width:1900px){  
+  .login-contater{
+        display: flex;
+        justify-content: flex-start;
+    }
+.login-rigth{
+    display: flex;
+    align-items: center;
+} 
+ .login1{
+    display: block;
+
+ }
+ .login1 img{
+    width: 450%;
+    height: 300%;
+    background-size: cover;
+ }
+
+}
+@media(max-width:935px){
+    
+}

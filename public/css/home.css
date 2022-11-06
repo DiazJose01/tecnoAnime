@@ -104,6 +104,7 @@ body {
 
 img {
   width: 100%;
+  background-size: cover;
 }
 
 li {
@@ -154,6 +155,10 @@ main section {
 main article {
   margin: 10px 0;
   width: 300px;
+}
+
+main article div{
+  background-size: cover;
 }
 
 main section article i {
@@ -207,7 +212,72 @@ main section article i {
 
 /* MAIN END */
 
+/*footer*/
+footer{
+    font-family: var(--roboto);
+    font-weight: bold;
+    background-color: var(--gris-claro);
+}
 
+.conteiner--footer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.foter-list {
+   padding: 4px;
+}
+
+.foter-list a{
+  text-decoration: none;
+  font-family: var(--roboto);
+  color: black;
+}
+.container-cardPage{
+  display: flex;
+  justify-content: row;
+   gap: 2px;
+}
+.cardPage img{
+   width: 30px;
+   height: 30px;
+   background-size: cover;
+}
+
+.input-group {
+  position: relative;
+ }
+ 
+ .input {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: black;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .user-label {
+  position: absolute;
+  left: 15px;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .input:focus, input:valid {
+  outline: none;
+  border: 1.5px solid #1a73e8;
+ }
+ 
+ .input:focus ~ label, input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #212121;
+  padding: 0 .2em;
+  color: #2196f3;
+ }
 
 @media (min-width: 361px) {
   header {
@@ -283,10 +353,35 @@ main section article i {
     justify-content: space-around;
   }
 
-  footer section .fas:hover{
-    color:var(--azul)
-  }
+
 }
+.buttom-check{
+  display: flex;
+  justify-content: center;
+}
+button {
+  border-radius: 999px;
+  padding: 1em 2em;
+  background: linear-gradient(117deg, rgb(254, 145, 80), rgb(254, 100, 70));
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease 0s;
+  letter-spacing: 0.08rem;
+ }
+ 
+ button:hover,
+ button:focus {
+  background: linear-gradient(117deg, rgb(248, 137, 73), rgb(248, 82, 49));
+  box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
+ }
+
+
+ 
 
 @media (min-width: 769px) {
   header li a {
@@ -302,24 +397,17 @@ main section article i {
   .subtitle-dues {
     vertical-align: top;
   }
-
-  footer div{
-  display: flex;
-  justify-content: space-around;
-  }
-  footer .copyright{
-  letter-spacing: 2px;
-  }
-  footer section{
-    
-margin: 20px 10px;
-  }
+  
   .container-fluid{
     height: 19vh;
     padding-top:30px ;
     
   }
-  .carousel-inner{
-   
+
+  .conteiner--footer{
+  flex-direction: row;
+  justify-content: space-between; 
   }
+  
 }
+

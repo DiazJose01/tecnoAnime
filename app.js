@@ -15,14 +15,8 @@ app.get('/carritoDeCompra', function (req, res){
 app.get('/fomularioRegister', function (req, res){
     res.sendFile(path.join(__dirname, "/views/fomularioRegister.html"))
 });
-app.get('/formularioLogin', function (req, res){
-    res.sendFile(path.join(__dirname, "/views/formularioLogin.html"))
-});
 app.get('/detalleDeProducto', function (req, res){
     res.sendFile(path.join(__dirname, "/views/detalleDeProducto.html"))
-});
-app.get('/vistaDeUsuario', function (req, res){
-    res.sendFile(path.join(__dirname, "/views/vistaDeUsuario.html"))
 });
 app.get('/login', function (req, res){
     res.sendFile(path.join(__dirname, "/views/login.html"))

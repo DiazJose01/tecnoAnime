@@ -27,7 +27,8 @@ body{
 
 .login-contater{
    
-    max-width: 420px;}
+    max-width: 420px;
+}
 
 .login-left{
 display: flex;
@@ -96,26 +97,9 @@ button a{
     display: none;
 }
 
-@media(max-width:1900px){  
-  .login-contater{
-        display: flex;
-        justify-content: flex-start;
-    }
-.login-rigth{
+@media(max-width:2000px){  
+  main{
     display: flex;
-    align-items: center;
-} 
- .login1{
-    display: block;
-
- }
- .login1 img{
-    width: 450%;
-    height: 300%;
-    background-size: cover;
- }
-
-}
-@media(max-width:935px){
-    
+    justify-content: center;
+  }
 }

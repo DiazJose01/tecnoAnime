@@ -133,6 +133,9 @@ h2 {
 
 /* HEADER */
 
+.container-fluid{
+  
+}
 
 
 /* HEADER END */
@@ -372,6 +375,10 @@ button {
   cursor: pointer;
   transition: box-shadow 0.25s ease 0s;
   letter-spacing: 0.08rem;
+ }
+ button a{
+  text-decoration: none;
+  color: var(--gris-claro);
  }
  
  button:hover,
